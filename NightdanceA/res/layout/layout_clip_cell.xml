@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:listSelector="@drawable/list_selector"
+     >
+
+	<!--  ListRow Left sied Thumbnail image -->
+	<LinearLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"		
+        android:layout_alignParentLeft="true"
+	    android:layout_marginRight="5dip">
+		<ImageView     
+			android:id="@+id/list_image"   
+	        android:layout_width="50dip"
+	        android:layout_height="50dip"
+	        android:src="@drawable/no_image"
+	        android:contentDescription="Thumbnail" />
+        
+	</LinearLayout>
+    
+	<!-- Title Of Song-->
+    <TextView
+        android:id="@+id/clip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="강좌 제목"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="15sp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+    <TextView
+        android:id="@+id/music_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="음악 제목"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+    <TextView
+        android:id="@+id/rating_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="점수 없음"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="12sp"
+        android:visibility="gone"
+	/>
+    <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dip"
+	        android:layout_toRightOf="@+id/thumbnail"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:progressDrawable="@drawable/ratingbar_red"
+            android:isIndicator="true" />
+        <TextView
+        android:id="@+id/comment_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dip"
+        android:layout_marginLeft="80dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="리뷰 0개"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="12sp"
+	/>
+    
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:src="@drawable/arrow"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"
+     	android:contentDescription="Right Arrow" />
+
+</RelativeLayout>

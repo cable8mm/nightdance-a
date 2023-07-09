@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+	android:background="@color/White"
+    android:padding="10dp"
+    >
+	<!-- 타이틀-->
+        <TextView
+            android:id="@+id/title"
+            style="@style/ClipDetailInfoTitle"
+            android:text="정보"
+		/>
+<!-- 노래 제목 -->
+        <TextView
+          android:id="@+id/song"
+        style="@style/ClipDetailInfoLabel"
+        android:layout_below="@+id/title"
+        android:text="노래"
+		/>
+            <TextView
+        style="@style/ClipDetailInfoValue"
+        android:id="@+id/music_title"
+        android:layout_below="@+id/title"
+        android:text="오늘은 준비가 됐어."
+        />
+<!-- 아티스트 -->
+        <TextView
+        style="@style/ClipDetailInfoLabel"
+        android:layout_below="@+id/music_title"
+        android:text="아티스트"
+        />
+        <TextView
+        style="@style/ClipDetailInfoValue"
+        android:id="@+id/music_singer"
+        android:layout_below="@+id/music_title"
+        android:text="아티스트."
+        />
+<!-- 장르 -->
+        <TextView
+        style="@style/ClipDetailInfoLabel"
+        android:layout_below="@+id/music_singer"
+        android:text="장르"
+        />
+        <TextView
+        style="@style/ClipDetailInfoValue"
+        android:id="@+id/genre_name"
+        android:layout_below="@+id/music_singer"
+        android:text="가요&amp;팝 안무"
+        />
+<!-- 난이도 & 적합 성별 -->
+<!-- 난이도 -->
+        <TextView
+        style="@style/ClipDetailInfoLabel"
+        android:layout_below="@+id/genre_name"
+        android:text="난이도"
+        />
+        <TextView
+        style="@style/ClipDetailInfoValue"
+        android:layout_below="@+id/genre_name"
+        android:id="@+id/clip_level"
+        android:text="초중급"
+        />
+<!-- 적합 성별 -->
+
+        <TextView
+            style="@style/ClipDetailInfoLabel2"
+            android:layout_below="@+id/genre_name"
+            android:text="적합 성별"
+            />
+
+        <TextView
+        style="@style/ClipDetailInfoValue2"
+        android:layout_below="@+id/genre_name"
+        android:id="@+id/clip_sex"
+        android:text="남성+여성"
+        />
+<!-- 작품성&실용성 -->
+        <TextView
+        style="@style/ClipDetailInfoLabel"
+        android:id="@+id/rating_label"
+        android:layout_below="@+id/clip_level"
+        android:text="작품성"
+        />
+        <RatingBar
+            android:id="@+id/rating1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:max="5"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:progressDrawable="@drawable/ratingbar_red"
+            android:isIndicator="true"
+	        android:layout_below="@+id/clip_level"
+	        android:layout_marginLeft="75dp"
+            />
+        
+        <TextView
+        style="@style/ClipDetailInfoValue"
+        android:id="@+id/clip_rate1"
+        android:layout_below="@+id/clip_level"
+        android:text="점수 없음"
+        android:visibility="gone"
+        />
+        <TextView
+        style="@style/ClipDetailInfoLabel2"
+        android:text="실용성"
+        android:layout_below="@+id/clip_level"
+        />
+        <RatingBar
+            android:id="@+id/rating2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:max="5"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:progressDrawable="@drawable/ratingbar_red"
+            android:isIndicator="true"
+        android:layout_below="@+id/clip_level"
+        android:layout_marginLeft="225dp"
+/>
+        
+        <TextView
+        style="@style/ClipDetailInfoValue2"
+        android:id="@+id/clip_rate2"
+        android:text="점수 없음"
+        android:visibility="gone"
+        android:layout_below="@+id/clip_level"
+        />
+<!-- 이용 시간 -->
+        <TextView
+        style="@style/ClipDetailInfoLabel"
+        android:text="이용 시간"
+        android:layout_below="@+id/rating_label"
+        android:textColor="@color/White"
+        android:visibility="gone"
+        />
+        <TextView
+        style="@style/ClipDetailInfoValue"
+        android:id="@+id/clip_term"
+        android:layout_below="@+id/rating_label"
+        android:text="72 시간"
+        android:textColor="@color/White"
+        android:visibility="gone"
+        />
+        <TextView
+        style="@style/ClipDetailInfoLabel2"
+        android:layout_below="@+id/rating_label"
+        android:text="강의 수강료"
+        android:textColor="@color/White"
+        android:visibility="gone"
+        />
+        <TextView
+        style="@style/ClipDetailInfoValue2"
+        android:layout_below="@+id/rating_label"
+        android:id="@+id/clip_payment"
+        android:text="2000"
+        android:textColor="@color/White"
+        android:visibility="gone"
+        />
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--     <PreferenceCategory
+            android:title="기본 정보">
+
+        <EditTextPreference
+                android:key="nickname_preference"
+                android:title="메아리바람"
+                android:summary="닉네임, 수정할 수 있습니다."
+                android:dialogTitle="새로운 닉네임을 입력하고 확인을 누르세요." />
+        
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="모바일 엔캐시 정보">
+<Preference android:title="150,000"
+   android:summary="소유한 엔캐시, 상세 내역을 확인하세요." android:key="ncash_preference" />
+    </PreferenceCategory>
+ -->
+<PreferenceCategory android:title="계정 관리">
+	<EditTextPreference android:title="닉네임"
+   				android:summary="닉네임, 수정할 수 있습니다." 
+   				android:key="nickname_preference" 
+   				android:dialogTitle="새로운 닉네임을 입력하고 확인을 누르세요."
+   				/>
+	<Preference android:title="로그인"
+   				android:summary="" 
+   				android:key="loginout_preference" 
+   				/>
+</PreferenceCategory>
+    
+</PreferenceScreen>

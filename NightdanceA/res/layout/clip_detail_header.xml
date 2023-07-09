@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:background="#fff"
+    >
+    
+ 	<!--  ListRow Left sied Thumbnail image -->
+	<RelativeLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"
+	    android:layout_marginRight="5dip">
+        
+		<ImageView     
+			android:id="@+id/list_image"   
+	        android:layout_width="100dip"
+	        android:layout_height="100dip"
+	        android:src="@drawable/no_image"
+	        android:contentDescription="Thumbnail"
+	        />
+			</RelativeLayout>
+	<!-- 강사 이름-->
+    <TextView
+        android:id="@+id/clip_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="강사 이름"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="15sp"
+        android:maxLines="1"
+        />
+	<!-- 강의 제목-->
+    <TextView
+        android:id="@+id/clip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="강좌 제목"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        />
+
+    <!-- 강좌 시청 버튼 Name -->
+    <Button
+        android:id="@+id/view_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/thumbnail"
+		android:layout_alignParentRight="true"
+        android:text="강좌 시청"
+        />
+	<!-- 강좌 미리보기 버튼 -->
+    <Button
+        android:id="@+id/preview_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view_button"
+        android:layout_toLeftOf="@+id/view_button"
+        android:textSize="12sp"
+        android:text="미리 보기" />
+    
+</RelativeLayout>

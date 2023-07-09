@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+	<!--  ListRow Left sied Thumbnail image -->
+	<LinearLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"		
+        android:layout_alignParentLeft="true"
+	    android:layout_marginRight="3dip">
+		<ImageView     
+			android:id="@+id/ticket_thumbnail"   
+	        android:layout_width="180dip"
+	        android:layout_height="85dip"
+	        android:src="@drawable/no_image"
+	        android:contentDescription="Thumbnail" />
+        
+	</LinearLayout>
+    
+    <TextView
+        android:id="@+id/ticket_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="자유이용권 이름"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="15sp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+    <TextView
+        android:id="@+id/ticket_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="가격 : 20,000 코인"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+    <TextView
+        android:id="@+id/ticket_term"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="이용 기간 : 30 일"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="12sp"
+	/>
+
+    
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:src="@drawable/arrow"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"
+     	android:contentDescription="Right Arrow" />
+
+</RelativeLayout>

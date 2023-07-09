@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip"
+    >
+    
+	<!-- Date-->
+    <TextView
+        android:id="@+id/text_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:typeface="sans" 
+        android:textSize="15sp"
+        android:maxLines="1"/>
+    <TextView
+        android:id="@+id/detail_text_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:textColor="@color/Grey"
+        android:typeface="sans" 
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+    <TextView
+        android:id="@+id/price_label"
+        android:layout_marginTop="10dip"
+        style="@style/BuyButton"
+        />
+</RelativeLayout>

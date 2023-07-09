@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_add_wish"
+        android:title="찜하기"
+        android:icon="@drawable/ic_action_not_important"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:checkable="true"
+        android:checked="true"
+        /> 
+    <item
+        android:id="@+id/action_write"
+        android:title="리뷰쓰기"
+        android:icon="@drawable/ic_action_write"
+        android:orderInCategory="100"
+        android:showAsAction="always"/> 
+</menu>

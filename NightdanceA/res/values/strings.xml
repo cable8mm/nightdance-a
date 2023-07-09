@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">나이트댄스</string>
+    <string name="action_settings">설정</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="main_activity_drawer_items_array">
+        <item>동영상 강좌</item>
+        <item>즐겨찾기</item>
+<!--         <item>자유이용권 구입</item> -->
+        <item>내 정보</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="search_title">동영상 검색</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="username">아이디</string>
+    <string name="password">암호</string>
+    <string name="signin">로그인</string>
+    <string name="cancel">취소</string>
+    <string name="write">쓰기</string>
+    <string name="review">리뷰</string>
+    <string name="allow">승인</string>
+    <string name="dont_allow">승인 불가</string>
+</resources>
